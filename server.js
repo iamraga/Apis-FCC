@@ -25,9 +25,12 @@ app.get("/api/timestamp/:date_string", function (req, res) {
   let date = req.params.date_string;
   let dateObj = new Date(date);
   let json = {};
-  if(dateObj) {
+  if(dateObj.toUTCString() !== "Invalid Date") {
     json.unix = dateObj.getTime();
     json.utc = dateObj.toUTCString();
+  }
+  else {
+    json.error = "Invalid date";
   }
   res.json(json);
 });
