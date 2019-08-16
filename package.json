@@ -1,7 +1,8 @@
 {
 	"name": "fcc-api-projects-boilerplate",
 	"version": "0.0.1",
-	"description": "An FCC Backend Challenge",
+	"description": "An FCC Time stamp microservice Backend Project",
+	"author": "https://github.com/iamraga",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
@@ -15,7 +16,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://githost.com/camper/repo.git"
+		"url": "https://github.com/iamraga/Timestamp-FCC.git"
 	},
 	"keywords": [
 		"node",
